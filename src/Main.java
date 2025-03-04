@@ -8,9 +8,22 @@ public class Main {
         p1.setY(6);
 
         Point p2 = new Point(7,8);
-        System.out.println(p1.toSvg());
-        System.out.println();
-        System.out.println(p2.toSvg());
+
+        Segment s = new Segment(p1,p2);
+        Segment s2 = new Segment(p1,p2);
+        p1.setX(15);
+        p1.setY(12);
+        p2.setX(15);
+        p2.setY(8);
+
 
     }
 }
+
+
+
+
+
+
+
+
