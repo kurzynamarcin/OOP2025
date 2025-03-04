@@ -10,7 +10,11 @@ public class Point {
                 "  <circle r=\"45\" cx=\"" + x +"\" cy=\"" + y+ "\" fill=\"red\" />\n" +
                 "</svg>";
     }
-
+    public Point(){}
+    public Point(double x, double y) {
+        this.x = x;
+        this.y = y;
+    }
 
     public double getY() {
         return y;
