@@ -1,5 +1,5 @@
 public class Point {
-    private double x;
+    private Double x;
     private double y;
 
 
@@ -10,6 +10,12 @@ public class Point {
                 "y=" + y + "\n\t" +
                 '}';
     }
+
+    public Point(Point toCopy){
+        this.x = toCopy.getX();
+        this.y = toCopy.getY();
+    }
+
 
     public String toSvg(){
         return "<svg height=\"100\" width=\"100\" xmlns=\"http://www.w3.org/2000/svg\">\n" +

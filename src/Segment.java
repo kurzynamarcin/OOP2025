@@ -35,4 +35,9 @@ public class Segment {
                 "\t" + "end=" + end + "\n" +
                 '}';
     }
+
+    public Segment(Segment toCopy) {
+        this.start = toCopy.getStart();
+        this.end = toCopy.getEnd();
+    }
 }

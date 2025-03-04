@@ -9,8 +9,12 @@ public class Main {
 
         Point p2 = new Point(7,8);
 
-        Segment s = new Segment(p1,p2);
-        Segment s2 = new Segment(p1,p2);
+        Point p3 = new Point(p1);
+        Point p4 = new Point(p2);
+
+
+        Segment s1 = new Segment(p1,p2);
+        Segment s2 = new Segment(p3,p4);
         p1.setX(15);
         p1.setY(12);
         p2.setX(15);
